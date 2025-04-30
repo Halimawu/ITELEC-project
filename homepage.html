@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #af6b4c;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .search-form {
+            margin-bottom: 2rem;
+        }
+        .search-form input, .search-form select, .search-form button {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            width: 100%;
+            max-width: 300px;
+        }
+        .featured-destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .destination {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            width: calc(33.333% - 2rem);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .destination img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Travel Booking</h1>
+    </header>
+    <div class="container">
+        <div class="search-form">
+            <h2>Find Your Next Adventure</h2>
+            <form>
+                <input type="text" placeholder="Destination" required>
+                <input type="date" required>
+                <select required>
+                    <option value="">Number of Travelers</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="featured-destinations">
+            <div class="destination">
+                <img src="paris.jpg" alt="Destination 1">
+                <h3>Paris, France</h3>
+                <p>Experience the city of lights and its iconic landmarks.</p>
+            </div>
+            <div class="destination">
+                <img src="japan.jpg" alt="Destination 2">
+                <h3>Tokyo, Japan</h3>
+                <p>Discover the vibrant culture and modern marvels of Tokyo.</p>
+            </div>
+            <div class="destination">
+                <img src="usa.webp" alt="Destination 3">
+                <h3>New York, USA</h3>
+                <p>Explore the bustling streets and famous attractions of NYC.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
